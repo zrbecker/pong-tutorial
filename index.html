@@ -8,6 +8,22 @@
     <style>
       body {
         background-color: #222;
+        padding: 0;
+        margin: 0;
+      }
+
+      #banner {
+        height: 40px;
+        font: 16rem;
+        background-color: #666;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FFF;
+      }
+
+      a {
+        color: #AAF;
       }
 
       #pong {
@@ -16,11 +32,18 @@
         margin: 0 auto;
         width: 800px;
         height: 600px;
+        margin-top: 1rem;
       }
     </style>
     <script src="./pong.js"></script>
   </head>
   <body>
+    <div id="banner">
+      See source at&nbsp;
+      <a href="https://github.com/zrbecker/pong-tutorial"
+        >https://github.com/zrbecker/pong-tutorial</a
+      >
+    </div>
     <canvas id="pong"></canvas>
     <script>
       Pong.init(document.getElementById("pong"));
